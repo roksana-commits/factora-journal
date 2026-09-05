@@ -1,0 +1,11 @@
+{
+  "name": "Factora Journal",
+  "short_name": "Factora",
+  "description": "Source-conscious reference profiles.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F0E7",
+  "theme_color": "#14223A",
+  "icons": []
+}
+
