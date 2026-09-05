@@ -58,8 +58,10 @@
 
 ## কনটেন্ট কাঠামো
 
-Homepage-এ থাকবে: utility ticker, masthead/navigation, asymmetric hero, methodology links, category index, featured dossier, recent research stream, evidence standard section, newsletter CTA এবং policy-rich footer। Sample content নতুনভাবে লেখা হবে; FactsLedger-এর কোনো বাক্য বা profile text হুবহু কপি করা হবে না।
+Homepage-এ থাকবে: utility ticker, masthead/navigation, asymmetric hero, methodology links, category index, publication-workflow dossier, collection-readiness stream, evidence standard section, newsletter CTA এবং policy-rich footer। কোনো named entity profile প্রস্তুত না হওয়া পর্যন্ত ব্যক্তি, স্কুল, বিশ্ববিদ্যালয়, প্রতিষ্ঠান, স্থান, ঘটনা বা creative work-এর নির্দিষ্ট নাম দেখানো হবে না।
 
 ## Style Decisions
 
 Long-form body copy, legal explanations, forms, lists এবং dense metadata-তে Manrope ব্যবহার হবে; Bodoni Moda শুধুমাত্র hero, section title, pull quote এবং সংক্ষিপ্ত editorial statement-এর জন্য। প্রতিটি major internal page-এ status, review date এবং correction/method cue-সহ দৃশ্যমান provenance cluster থাকবে। Related-record panel-এর headline ও link hierarchy page-specific হবে; একই generic framing পুনরাবৃত্তি করা হবে না। Legal ও contact pages-এ evidence spine, review seal, offset paper shadow এবং angled scope tab সংযতভাবে ব্যবহার করা হবে।
+
+Evidence Vermilion বড় decorative background হিসেবে নয়—শুধু verification, correction, active state, key numeral এবং primary research action-এ ব্যবহৃত হবে। Homepage hero-তে edition, review date ও pre-publication status-সহ একটি dedicated provenance rail থাকবে। Factora wordmark-এর serif “F”-এ custom vermilion evidence-tick treatment থাকবে; circular aperture/document mark masthead ও footer-এ অপরিবর্তিত থাকবে।

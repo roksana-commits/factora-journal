@@ -15,3 +15,13 @@
 - [x] Confirm the local project git state and prepare a clean source commit.
 - [x] Push the current website source without overwriting unrelated remote work.
 - [x] Verify the remote branch and latest commit on GitHub.
+
+## USA/Europe Positioning and Technical SEO
+
+- [x] Audit the project for legacy regional references and all specific people, school, university, place, organization, event or creative-work names.
+- [x] Replace unfinished-profile content with entity-neutral collection and research-status language for US and European audiences.
+- [x] Remove search/filter data that exposes specific demonstration profiles.
+- [x] Improve canonical, robots, Open Graph, social and schema metadata across routes.
+- [x] Add production-ready `sitemap.xml`, `robots.txt`, `llms.txt` and `llms-full.txt` using the live domain.
+- [x] Verify sitemap URLs, crawler files, build output, responsive homepage and neutrality requirements.
+- [ ] Save/publish the update and push the final source to GitHub `main`.

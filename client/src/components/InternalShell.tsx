@@ -19,7 +19,7 @@ export function InternalHeader() {
         <div className="page-frame masthead-inner">
           <Link className="brand-lockup" href="/" aria-label="Factora Journal home">
             <span className="brand-mark-wrap"><img src={mark} alt="" className="brand-mark" /></span>
-            <span><strong>Factora</strong><small>Independent evidence journal</small></span>
+            <span><strong><span className="brand-f">F</span>actora</strong><small>Independent evidence journal</small></span>
           </Link>
           <nav className="internal-nav" aria-label="Editorial navigation">
             <Link href="/about">About</Link>
@@ -40,7 +40,7 @@ export function InternalFooter() {
         <div className="footer-brand">
           <Link className="brand-lockup" href="/">
             <span className="brand-mark-wrap"><img src={mark} alt="" className="brand-mark" /></span>
-            <span><strong>Factora</strong><small>Independent evidence journal</small></span>
+            <span><strong><span className="brand-f">F</span>actora</strong><small>Independent evidence journal</small></span>
           </Link>
           <p>An independent demonstration of source-conscious reference publishing.</p>
         </div>
@@ -64,8 +64,8 @@ export function InternalFooter() {
         </div>
       </div>
       <div className="page-frame footer-bottom">
-        <p>© 2026 Factora Journal · Demonstration edition</p>
-        <p><Link href="/contact">Contact</Link> · <Link href="/about">About this edition</Link></p>
+        <p>© 2026 Factora Journal · Pre-publication edition</p>
+        <p><Link href="/contact">Contact</Link> · <a href="/sitemap.xml">Sitemap</a> · <a href="/llms.txt">LLM guide</a></p>
       </div>
     </footer>
   );

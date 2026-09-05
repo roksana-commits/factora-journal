@@ -162,7 +162,7 @@ export const documents: Record<string, EditorialDocument> = {
     kicker: "Legal file 04",
     effective: effectiveDate,
     summary: "Factora provides independently assembled reference material, not professional advice or an official record of the entities it covers.",
-    notice: "The demonstration profiles are sample editorial content used to show the design and research model; they are not complete published dossiers.",
+    notice: "No named entity profile is published in the current pre-publication edition. Collection descriptions show the intended editorial model only.",
     sections: [
       {
         id: "information",
@@ -255,13 +255,13 @@ export const documents: Record<string, EditorialDocument> = {
     title: "About Factora",
     shortTitle: "About",
     kicker: "About the journal",
-    effective: "Demonstration edition · 2026",
+    effective: "Pre-publication edition · 2026",
     summary: "Factora is a design demonstration for an independent reference journal built around sources, context and visible correction.",
     sections: [
       { id: "purpose", title: "Why Factora exists", paragraphs: ["Public information is often scattered across records, institutional pages, reporting and archives. Factora’s model brings those pieces into a readable profile while preserving the route back to each kind of evidence."] },
       { id: "not", title: "What it is not", paragraphs: ["Factora is not an official registry, a directory, a reputation service or an encyclopedia mirror. Inclusion does not imply endorsement or wrongdoing, and a profile is not a substitute for the underlying record."] },
       { id: "principles", title: "Editorial principles", points: ["Sources should be visible and accurately represented.", "First-party statements should be labelled.", "Uncertainty should be stated rather than smoothed over.", "Substantive corrections should remain visible.", "Documented entities should not control the conclusions."], paragraphs: [] },
-      { id: "edition", title: "About this edition", paragraphs: ["The current site is a static demonstration with sample research files, generated editorial imagery and no connected submission backend. It presents the design, information architecture and editorial-policy framework for a future publication."] },
+      { id: "edition", title: "About this edition", paragraphs: ["The current site is a pre-publication demonstration with no published entity profiles and no connected submission backend. It presents the design, collection taxonomy, research methodology and editorial-policy framework for a future publication serving readers in the United States and Europe."] },
     ],
   },
 };

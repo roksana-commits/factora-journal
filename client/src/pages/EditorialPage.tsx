@@ -4,6 +4,7 @@ import { ArrowUp, ArrowUpRight, Check, FileCheck2, History, ShieldCheck } from "
 import { Link } from "wouter";
 import { documents } from "@/content/legal";
 import { InternalShell } from "@/components/InternalShell";
+import Seo from "@/components/Seo";
 
 const relatedFraming: Record<string, { eyebrow: string; title: string; links: [string, string][] }> = {
   privacy: { eyebrow: "Privacy record", title: "Control begins with clarity.", links: [["Cookie policy", "/legal/cookies"], ["Terms of use", "/legal/terms"], ["Rights request", "/contact"], ["Corrections", "/corrections"]] },
@@ -17,6 +18,18 @@ const relatedFraming: Record<string, { eyebrow: string; title: string; links: [s
   about: { eyebrow: "About the journal", title: "The record, with its edges visible.", links: [["Editorial policy", "/editorial-policy"], ["Methodology", "/methodology"], ["Source policy", "/source-policy"], ["Contact", "/contact"]] },
 };
 
+const pagePaths: Record<string, string> = {
+  privacy: "/legal/privacy",
+  terms: "/legal/terms",
+  cookies: "/legal/cookies",
+  disclaimer: "/legal/disclaimer",
+  editorial: "/editorial-policy",
+  sources: "/source-policy",
+  methodology: "/methodology",
+  corrections: "/corrections",
+  about: "/about",
+};
+
 export default function EditorialPage({ documentKey }: { documentKey: string }) {
   const document = documents[documentKey];
   const related = relatedFraming[documentKey];
@@ -28,6 +41,13 @@ export default function EditorialPage({ documentKey }: { documentKey: string }) 
 
   return (
     <InternalShell>
+      <Seo
+        path={pagePaths[documentKey]}
+        title={`${document.title} | Factora Journal`}
+        description={document.summary}
+        type="article"
+        schemaType={documentKey === "about" ? "AboutPage" : "WebPage"}
+      />
       <main id="main-content">
         <header className="document-hero">
           <div className="page-frame document-hero-grid">

@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { Link } from "wouter";
+import Seo from "@/components/Seo";
 import {
   Dialog,
   DialogContent,
@@ -35,9 +36,7 @@ import {
 
 const assets = {
   hero: "/manus-storage/factora-hero_8920929a.jpg",
-  delta: "/manus-storage/factora-delta_625cc60e.jpg",
   archive: "/manus-storage/factora-archive_a166eecd.jpg",
-  researcher: "/manus-storage/factora-researcher_ae46a853.jpg",
   mark: "/manus-storage/factora-mark_3e3e5d50.png",
 };
 
@@ -53,63 +52,53 @@ const categories = [
 
 const profiles = [
   {
-    title: "The Meghna Delta",
-    category: "Places",
-    region: "Bangladesh",
-    updated: "Research file 01",
-    summary:
-      "A geographic file tracing a living network of rivers, settlements and public infrastructure through maps and institutional records.",
-    image: assets.delta,
-  },
-  {
-    title: "Begum Rokeya",
-    category: "People",
-    region: "South Asia",
-    updated: "Research file 02",
-    summary:
-      "A reading file bringing together public archives and scholarship around a consequential writer, educator and reformer.",
-    image: assets.researcher,
-  },
-  {
-    title: "Bangladesh National Museum",
-    category: "Organizations",
-    region: "Bangladesh",
-    updated: "Research file 03",
-    summary:
-      "An institutional profile organized around collections, stewardship, governance and the public record.",
-    image: assets.archive,
-  },
-  {
-    title: "University of Dhaka",
-    category: "Universities & Colleges",
-    region: "Bangladesh",
-    updated: "Research file 04",
-    summary:
-      "A structured research file on an institution, its recorded milestones and its place in public life.",
-  },
-  {
-    title: "The Bengali Language Movement",
-    category: "Events & Documents",
-    region: "South Asia",
-    updated: "Research file 05",
-    summary:
-      "A documentary pathway through declarations, dates, participants and archival interpretations.",
-  },
-  {
-    title: "A River Called Titash",
-    category: "Creative Works",
-    region: "Bengal",
-    updated: "Research file 06",
-    summary:
-      "A contextual file connecting a creative work to publication history, adaptation and the world around it.",
-  },
-  {
-    title: "A Public School Archive",
+    title: "Schools",
     category: "Schools",
-    region: "Demonstration file",
-    updated: "Research file 07",
-    summary:
-      "A model school profile showing how statutory records, institutional material and independent reporting can be separated clearly.",
+    region: "Collection framework",
+    updated: "Profiles not yet published",
+    summary: "A research framework for governance, public records, institutional history and community context.",
+  },
+  {
+    title: "Universities & Colleges",
+    category: "Universities & Colleges",
+    region: "Collection framework",
+    updated: "Profiles not yet published",
+    summary: "A structured approach to charters, oversight, institutional change and the public record.",
+  },
+  {
+    title: "People",
+    category: "People",
+    region: "Collection framework",
+    updated: "Profiles not yet published",
+    summary: "Public-interest biographies built from attributable records, independent reporting and disclosed gaps.",
+  },
+  {
+    title: "Organizations",
+    category: "Organizations",
+    region: "Collection framework",
+    updated: "Profiles not yet published",
+    summary: "A method for documenting institutions, companies and networks without promotional framing.",
+  },
+  {
+    title: "Places",
+    category: "Places",
+    region: "Collection framework",
+    updated: "Profiles not yet published",
+    summary: "Context-led place files connecting authoritative records, history, infrastructure and change over time.",
+  },
+  {
+    title: "Events & Documents",
+    category: "Events & Documents",
+    region: "Collection framework",
+    updated: "Profiles not yet published",
+    summary: "A documentary pathway through dates, original records, participants and competing interpretations.",
+  },
+  {
+    title: "Creative Works",
+    category: "Creative Works",
+    region: "Collection framework",
+    updated: "Profiles not yet published",
+    summary: "Context files for notable works with a documented history beyond routine critical reception.",
   },
 ];
 
@@ -127,7 +116,7 @@ function Brand() {
         <img src={assets.mark} alt="" className="brand-mark" />
       </span>
       <span>
-        <strong>Factora</strong>
+        <strong><span className="brand-f">F</span>actora</strong>
         <small>Independent evidence journal</small>
       </span>
     </a>
@@ -160,8 +149,8 @@ export default function Home() {
   }, [query]);
 
   const showDemoNotice = (label: string) =>
-    toast("Demonstration edition", {
-      description: `${label} is represented as a homepage prototype in this static edition.`,
+    toast("Collection in preparation", {
+      description: `${label} has no published entity profiles yet.`,
     });
 
   const exploreCategory = (category: string) => {
@@ -179,6 +168,11 @@ export default function Home() {
 
   return (
     <div id="top" className="site-shell">
+      <Seo
+        path="/"
+        title="Independent Reference Profiles for the US & Europe | Factora"
+        description="Factora Journal prepares source-conscious reference profiles for US and European audiences, with transparent methods, source labels and corrections."
+      />
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
@@ -187,7 +181,7 @@ export default function Home() {
         <div className="page-frame research-strip-inner">
           <span className="signal-dot" aria-hidden="true" />
           <p>
-            Demonstration edition <span>·</span> Seven open research files
+            Pre-publication edition <span>·</span> Seven collections in preparation
           </p>
           <p className="strip-right">Updated 05 Sep 2026 · GMT+6</p>
         </div>
@@ -223,6 +217,9 @@ export default function Home() {
 
       <main id="main-content">
         <section className="hero page-frame" aria-labelledby="hero-heading">
+          <aside className="home-provenance-rail" aria-label="Publication provenance">
+            <span>Edition 00</span><i aria-hidden="true" /><span>Reviewed 05.09.26</span><span>Status · Pre-publication</span>
+          </aside>
           <div className="hero-copy">
             <p className="eyebrow">
               <span>01</span> Independent reference profiles
@@ -231,8 +228,8 @@ export default function Home() {
               Every name leaves a <em>paper trail.</em>
             </h1>
             <p className="hero-intro">
-              Factora builds source-conscious profiles of people, places and institutions—so the record is
-              easier to read, question and correct.
+              Factora is preparing source-conscious profiles for readers in the United States and Europe—so
+              public records will be easier to read, question and correct.
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="#featured">
@@ -245,15 +242,15 @@ export default function Home() {
             <dl className="hero-notes">
               <div>
                 <dt>Scope</dt>
-                <dd>7 collections</dd>
+                <dd>US + Europe</dd>
               </div>
               <div>
                 <dt>Evidence</dt>
                 <dd>Public records first</dd>
               </div>
               <div>
-                <dt>Policy</dt>
-                <dd>Corrections stay visible</dd>
+                <dt>Reviewed</dt>
+                <dd>05 September 2026</dd>
               </div>
             </dl>
           </div>
@@ -302,33 +299,31 @@ export default function Home() {
         <section id="featured" className="featured-section">
           <div className="page-frame featured-layout">
             <div className="featured-image-column">
-              <p className="vertical-caption">Current dossier · Place file</p>
+              <p className="vertical-caption">Publication workflow · Open method</p>
               <figure className="featured-image">
-                <img src={assets.delta} alt="Aerial view of branching river channels across a green delta" />
-                <figcaption>Field image / demonstration edition</figcaption>
+                <img src={assets.archive} alt="Archive reading room with catalogues and source material" />
+                <figcaption>Evidence workflow / pre-publication</figcaption>
               </figure>
             </div>
             <article className="featured-copy">
-              <p className="eyebrow light"><span>03</span> Featured research file</p>
+              <p className="eyebrow light"><span>03</span> Publication dossier</p>
               <div className="file-meta">
-                <span>Places</span><span>Bangladesh</span><span>File 01</span>
+                <span>Editorial workflow</span><span>Pre-publication</span><span>Method 01</span>
               </div>
-              <h2>The Meghna Delta</h2>
+              <h2>Before a profile is published.</h2>
               <p className="featured-deck">
-                A landscape shaped by moving water, human settlement and layers of public record.
+                Every future entity file must pass the same visible evidence standard.
               </p>
               <p className="featured-body">
-                This demonstration file shows how a Factora profile moves between maps, institutional publications
-                and independent reporting without flattening uncertainty into a single neat answer.
+                Research begins with a clearly defined subject, moves through public records and independent
+                reporting, and remains unpublished until claims, context and open questions have been reviewed.
               </p>
-              <button className="light-action" type="button" onClick={() => showDemoNotice("The Meghna Delta dossier")}>
-                Read the research note <ArrowUpRight size={18} />
-              </button>
+              <Link className="light-action" href="/methodology">Read the methodology <ArrowUpRight size={18} /></Link>
               <div className="source-card">
                 <ShieldCheck size={24} />
                 <div>
-                  <strong>Source status</strong>
-                  <span>Public records + institutional material + independent reporting</span>
+                  <strong>Publication gate</strong>
+                  <span>No named profile appears before its editorial file is ready.</span>
                 </div>
               </div>
             </article>
@@ -338,8 +333,8 @@ export default function Home() {
         <section id="research" className="research-section page-frame">
           <div className="section-heading split-heading research-heading">
             <div>
-              <p className="eyebrow"><span>04</span> Recently researched</p>
-              <h2>Notes from the desk.</h2>
+              <p className="eyebrow"><span>04</span> Publication status</p>
+              <h2>Collections in preparation.</h2>
             </div>
             <div className="filter-wrap" aria-label="Filter research files">
               <label htmlFor="category-filter">Viewing</label>
@@ -358,13 +353,7 @@ export default function Home() {
             {visibleProfiles.map((profile, index) => (
               <article className="research-row" key={profile.title}>
                 <div className="row-number">{String(index + 1).padStart(2, "0")}</div>
-                {profile.image ? (
-                  <div className="row-thumb">
-                    <img src={profile.image} alt="" loading="lazy" />
-                  </div>
-                ) : (
-                  <div className="row-monogram" aria-hidden="true">{profile.title.charAt(0)}</div>
-                )}
+                <div className="row-monogram" aria-hidden="true">{profile.title.charAt(0)}</div>
                 <div className="row-main">
                   <div className="row-meta">
                     <span>{profile.category}</span>
@@ -462,20 +451,20 @@ export default function Home() {
           </div>
         </div>
         <div className="page-frame footer-bottom">
-          <p>© 2026 Factora Journal · Demonstration edition</p>
-          <p><Link href="/legal/privacy">Privacy</Link> · <Link href="/legal/terms">Terms</Link> · <Link href="/legal/cookies">Cookies</Link> · <Link href="/legal/disclaimer">Disclaimer</Link></p>
+          <p>© 2026 Factora Journal · Pre-publication edition</p>
+          <p><Link href="/legal/privacy">Privacy</Link> · <Link href="/legal/terms">Terms</Link> · <a href="/sitemap.xml">Sitemap</a> · <a href="/llms.txt">LLM guide</a></p>
         </div>
       </footer>
 
       <Dialog open={searchOpen} onOpenChange={setSearchOpen}>
         <DialogContent className="search-dialog sm:max-w-2xl">
           <DialogHeader>
-            <DialogTitle>Search the open files</DialogTitle>
-            <DialogDescription>Search by entity, collection or region.</DialogDescription>
+            <DialogTitle>Search the collections</DialogTitle>
+            <DialogDescription>Search the collection frameworks currently in preparation.</DialogDescription>
           </DialogHeader>
           <div className="search-field">
             <Search size={19} />
-            <input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try ‘People’ or ‘Bangladesh’" />
+            <input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try ‘Schools’ or ‘Places’" />
           </div>
           <div className="search-results">
             {searchResults.length ? searchResults.map((profile) => (

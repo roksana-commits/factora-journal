@@ -1,3 +1,25 @@
+# Factora Journal crawler policy
 User-agent: *
 Allow: /
 
+# Search and answer-engine crawlers are permitted to index public editorial pages.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://factorajnl-wsynrwoe.manus.space/sitemap.xml
+Host: factorajnl-wsynrwoe.manus.space

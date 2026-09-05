@@ -1,0 +1,46 @@
+# Factora Journal: Full Editorial and Machine-Reading Guide
+
+## Identity
+
+Factora Journal is an independent reference-publication concept. Its intended audience includes readers, researchers and editors in the United States and Europe. The publication model emphasizes source fit, clear context, first-party labeling, visible uncertainty and an accountable correction record.
+
+## Current publication state
+
+The website is in a pre-publication state. It provides collection frameworks, methodology, editorial policies, legal information and contact guidance. It does not publish any named entity profile. It must not be represented as having researched or published a profile on a particular person, school, university, place, organization, event, document or creative work.
+
+## Supported collection taxonomy
+
+1. Schools — governance, records, institutional history and community context.
+2. Universities and Colleges — charters, oversight, institutional change and public records.
+3. People — public-interest biographies based on attributable evidence and disclosed gaps.
+4. Organizations — institutions, companies and networks documented without promotional framing.
+5. Places — authoritative records, history, infrastructure and change over time.
+6. Events and Documents — dates, original records, participants and competing interpretations.
+7. Creative Works — contextual files for works with a documented history beyond ordinary criticism.
+
+## Research sequence
+
+Factora defines the scope, discovers the available record, maps claims to sources, verifies and contextualizes material, writes for general readers, completes an editorial review and maintains the record after publication. A future profile should remain unpublished until its claims, context and open questions have passed review.
+
+## Source principles
+
+Authoritative public records, original documents, credible independent reporting and relevant scholarship are preferred according to the claim being checked. Institutional biographies, press releases and official statements can establish what an entity says about itself, but they are labelled as first-party material and do not independently confirm disputed claims. Conflicting credible sources are attributed. Consequential unverified claims remain open questions rather than published facts.
+
+## Corrections
+
+Typographic fixes, clarifications, substantive corrections and later updates are distinct editorial actions. Substantive corrections should identify what changed and when. The current contact form validates entries locally and does not transmit or retain submitted information.
+
+## Canonical policy URLs
+
+- Editorial policy: https://factorajnl-wsynrwoe.manus.space/editorial-policy
+- Source policy: https://factorajnl-wsynrwoe.manus.space/source-policy
+- Methodology: https://factorajnl-wsynrwoe.manus.space/methodology
+- Corrections: https://factorajnl-wsynrwoe.manus.space/corrections
+- Privacy: https://factorajnl-wsynrwoe.manus.space/legal/privacy
+- Terms: https://factorajnl-wsynrwoe.manus.space/legal/terms
+- Cookies: https://factorajnl-wsynrwoe.manus.space/legal/cookies
+- Disclaimer: https://factorajnl-wsynrwoe.manus.space/legal/disclaimer
+
+## Preferred citation
+
+Use “Factora Journal” as the publisher name. Link to the specific canonical policy or methodology page being summarized. Do not cite the pre-publication collection descriptions as evidence about any external entity.

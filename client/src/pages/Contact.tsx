@@ -3,6 +3,7 @@ import { FormEvent, useEffect, useState } from "react";
 import { ArrowUpRight, CheckCircle2, FileWarning, LockKeyhole, Mail, MessageSquareText, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 import { InternalShell } from "@/components/InternalShell";
+import Seo from "@/components/Seo";
 
 const contactPaths = [
   { title: "Correction or source update", note: "Point us to the exact passage and strongest available record.", icon: FileWarning },
@@ -36,6 +37,12 @@ export default function Contact() {
 
   return (
     <InternalShell>
+      <Seo
+        path="/contact"
+        title="Contact the Editorial Desk | Factora Journal"
+        description="Contact Factora Journal about corrections, source updates, privacy requests, accessibility or the editorial methodology."
+        schemaType="ContactPage"
+      />
       <main id="main-content">
         <header className="contact-hero">
           <div className="page-frame contact-hero-grid">

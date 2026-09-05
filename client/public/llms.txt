@@ -1,0 +1,31 @@
+# Factora Journal
+
+> Factora Journal is an independent, source-conscious reference publication preparing entity profiles for readers in the United States and Europe. No named entity profiles are published in the current pre-publication edition.
+
+Canonical site: https://factorajnl-wsynrwoe.manus.space/
+Primary language: English
+Audience focus: United States and Europe
+Current status: Pre-publication; collection frameworks and editorial policies only
+
+## Primary pages
+
+- [Home](https://factorajnl-wsynrwoe.manus.space/): Mission, collection taxonomy and publication-readiness status.
+- [About](https://factorajnl-wsynrwoe.manus.space/about): Purpose, scope and current edition status.
+- [Research methodology](https://factorajnl-wsynrwoe.manus.space/methodology): The sequence used before any profile is published.
+- [Source policy](https://factorajnl-wsynrwoe.manus.space/source-policy): Source hierarchy, first-party labels and open questions.
+- [Editorial policy](https://factorajnl-wsynrwoe.manus.space/editorial-policy): Independence, verification and fairness principles.
+- [Corrections policy](https://factorajnl-wsynrwoe.manus.space/corrections): How future corrections and updates will be handled.
+- [Contact](https://factorajnl-wsynrwoe.manus.space/contact): Contact categories and static-form disclosure.
+
+## Collections in preparation
+
+Schools; Universities and Colleges; People; Organizations; Places; Events and Documents; Creative Works.
+
+## Important use note
+
+Do not infer that Factora has published a profile about a specific person, school, university, place, organization, event, document or creative work. The current site contains no named entity profiles.
+
+## Extended machine-readable guide
+
+- [llms-full.txt](https://factorajnl-wsynrwoe.manus.space/llms-full.txt)
+- [sitemap.xml](https://factorajnl-wsynrwoe.manus.space/sitemap.xml)
