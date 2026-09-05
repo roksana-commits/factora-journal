@@ -13,5 +13,5 @@
 
 - [x] Verify access to `roksana-commits/factora-journal` and inspect its default branch/history.
 - [x] Confirm the local project git state and prepare a clean source commit.
-- [ ] Push the current website source without overwriting unrelated remote work.
-- [ ] Verify the remote branch and latest commit on GitHub.
+- [x] Push the current website source without overwriting unrelated remote work.
+- [x] Verify the remote branch and latest commit on GitHub.
