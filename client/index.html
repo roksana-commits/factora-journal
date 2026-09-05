@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Independent Reference Profiles for the US & Europe | Factora" />
     <meta name="twitter:description" content="Source-conscious reference publishing with transparent methods, source labels and visible corrections." />
     <meta name="twitter:image" content="https://factorajnl-wsynrwoe.manus.space/manus-storage/factora-hero_8920929a.jpg" />
-    <link rel="icon" type="image/png" href="/manus-storage/factora-mark_3e3e5d50.png" />
+    <link rel="icon" type="image/png" href="https://factorajnl-wsynrwoe.manus.space/manus-storage/factora-mark_3e3e5d50.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,6 +58,16 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script defer src="%VITE_ANALYTICS_ENDPOINT%/umami" data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script type="module">
+      const analyticsEndpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT;
+      const analyticsWebsiteId = import.meta.env.VITE_ANALYTICS_WEBSITE_ID;
+      if (analyticsEndpoint && analyticsWebsiteId) {
+        const analyticsScript = document.createElement("script");
+        analyticsScript.defer = true;
+        analyticsScript.src = `${analyticsEndpoint.replace(/\/$/, "")}/umami`;
+        analyticsScript.dataset.websiteId = analyticsWebsiteId;
+        document.body.appendChild(analyticsScript);
+      }
+    </script>
   </body>
 </html>

@@ -25,3 +25,11 @@
 - [x] Add production-ready `sitemap.xml`, `robots.txt`, `llms.txt` and `llms-full.txt` using the live domain.
 - [x] Verify sitemap URLs, crawler files, build output, responsive homepage and neutrality requirements.
 - [ ] Save/publish the update and push the final source to GitHub `main`.
+
+## Cloudflare Deployment Fix
+
+- [x] Inspect the Vite configuration, package scripts and generated output path against the deployment log.
+- [x] Add an explicit Wrangler configuration for SPA static assets so auto-configuration is not triggered.
+- [x] Remove optional Manus-only analytics placeholders from external GitHub builds.
+- [x] Validate a clean frozen-lockfile install, production build and Wrangler configuration.
+- [x] Save the fixed version and push it to GitHub `main`.

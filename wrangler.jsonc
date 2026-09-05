@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "factora-journal",
+  "compatibility_date": "2026-09-03",
+  "assets": {
+    "directory": "./dist/public",
+    "not_found_handling": "single-page-application",
+    "html_handling": "auto-trailing-slash"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
