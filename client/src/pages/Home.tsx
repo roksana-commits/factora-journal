@@ -17,6 +17,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { toast } from "sonner";
+import { Link } from "wouter";
 import {
   Dialog,
   DialogContent,
@@ -112,7 +113,12 @@ const profiles = [
   },
 ];
 
-const navItems = ["Index", "Research", "Standards", "About"];
+const navItems = [
+  { label: "Index", href: "#index", route: false },
+  { label: "Research", href: "#research", route: false },
+  { label: "Method", href: "/methodology", route: true },
+  { label: "About", href: "/about", route: true },
+];
 
 function Brand() {
   return (
@@ -191,10 +197,10 @@ export default function Home() {
         <div className="page-frame masthead-inner">
           <Brand />
           <nav className="desktop-nav" aria-label="Primary navigation">
-            {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`}>
-                {item}
-              </a>
+            {navItems.map((item) => item.route ? (
+              <Link key={item.label} href={item.href}>{item.label}</Link>
+            ) : (
+              <a key={item.label} href={item.href}>{item.label}</a>
             ))}
           </nav>
           <div className="header-actions">
@@ -387,9 +393,9 @@ export default function Home() {
                 Factora separates a source from the claim it supports. First-party statements are labelled,
                 disagreements remain visible and corrections become part of the record.
               </p>
-              <button type="button" className="text-action dark" onClick={() => showDemoNotice("Editorial standards")}>
+              <Link href="/methodology" className="text-action dark">
                 See the editorial standard <ArrowUpRight size={16} />
-              </button>
+              </Link>
             </div>
             <ol className="standard-steps">
               <li>
@@ -445,9 +451,10 @@ export default function Home() {
           </div>
           <div className="footer-column">
             <strong>Editorial</strong>
-            {["Methodology", "Source policy", "Corrections", "Contact"].map((label) => (
-              <button key={label} type="button" onClick={() => showDemoNotice(label)}>{label}</button>
-            ))}
+            <Link href="/methodology">Methodology</Link>
+            <Link href="/source-policy">Source policy</Link>
+            <Link href="/corrections">Corrections</Link>
+            <Link href="/contact">Contact</Link>
           </div>
           <div className="footer-statement">
             <span>Independent by design</span>
@@ -456,7 +463,7 @@ export default function Home() {
         </div>
         <div className="page-frame footer-bottom">
           <p>© 2026 Factora Journal · Demonstration edition</p>
-          <p>Built around sources, context and visible correction.</p>
+          <p><Link href="/legal/privacy">Privacy</Link> · <Link href="/legal/terms">Terms</Link> · <Link href="/legal/cookies">Cookies</Link> · <Link href="/legal/disclaimer">Disclaimer</Link></p>
         </div>
       </footer>
 
@@ -497,9 +504,13 @@ export default function Home() {
             <SheetDescription>Explore this demonstration edition.</SheetDescription>
           </SheetHeader>
           <nav aria-label="Mobile navigation">
-            {navItems.map((item, index) => (
-              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>
-                <span>{String(index + 1).padStart(2, "0")}</span>{item}<ArrowUpRight size={18} />
+            {navItems.map((item, index) => item.route ? (
+              <Link key={item.label} href={item.href} onClick={() => setMenuOpen(false)}>
+                <span>{String(index + 1).padStart(2, "0")}</span>{item.label}<ArrowUpRight size={18} />
+              </Link>
+            ) : (
+              <a key={item.label} href={item.href} onClick={() => setMenuOpen(false)}>
+                <span>{String(index + 1).padStart(2, "0")}</span>{item.label}<ArrowUpRight size={18} />
               </a>
             ))}
           </nav>

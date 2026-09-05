@@ -59,3 +59,7 @@
 ## কনটেন্ট কাঠামো
 
 Homepage-এ থাকবে: utility ticker, masthead/navigation, asymmetric hero, methodology links, category index, featured dossier, recent research stream, evidence standard section, newsletter CTA এবং policy-rich footer। Sample content নতুনভাবে লেখা হবে; FactsLedger-এর কোনো বাক্য বা profile text হুবহু কপি করা হবে না।
+
+## Style Decisions
+
+Long-form body copy, legal explanations, forms, lists এবং dense metadata-তে Manrope ব্যবহার হবে; Bodoni Moda শুধুমাত্র hero, section title, pull quote এবং সংক্ষিপ্ত editorial statement-এর জন্য। প্রতিটি major internal page-এ status, review date এবং correction/method cue-সহ দৃশ্যমান provenance cluster থাকবে। Related-record panel-এর headline ও link hierarchy page-specific হবে; একই generic framing পুনরাবৃত্তি করা হবে না। Legal ও contact pages-এ evidence spine, review seal, offset paper shadow এবং angled scope tab সংযতভাবে ব্যবহার করা হবে।
