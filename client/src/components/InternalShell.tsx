@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
 
-const mark = "https://factorajnl-wsynrwoe.manus.space/manus-storage/factora-mark_3e3e5d50.png";
+const mark = "https://files.manuscdn.com/user_upload_by_module/session_file/310419663030736112/NIvPnqRdzdxoPpxy.png";
 
 export function InternalHeader() {
   return (

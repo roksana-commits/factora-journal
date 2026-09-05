@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 export const SITE_ORIGIN = "https://factorajnl-wsynrwoe.manus.space";
-const SOCIAL_IMAGE = `${SITE_ORIGIN}/manus-storage/factora-hero_8920929a.jpg`;
+const SOCIAL_IMAGE = "https://files.manuscdn.com/user_upload_by_module/session_file/310419663030736112/PeQYVHfGpZolyVGq.jpg";
 
 type SeoProps = {
   title: string;

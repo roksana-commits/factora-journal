@@ -35,9 +35,9 @@ import {
 } from "@/components/ui/sheet";
 
 const assets = {
-  hero: "https://factorajnl-wsynrwoe.manus.space/manus-storage/factora-hero_8920929a.jpg",
-  archive: "https://factorajnl-wsynrwoe.manus.space/manus-storage/factora-archive_a166eecd.jpg",
-  mark: "https://factorajnl-wsynrwoe.manus.space/manus-storage/factora-mark_3e3e5d50.png",
+  hero: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663030736112/PeQYVHfGpZolyVGq.jpg",
+  archive: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663030736112/UeeLQELYEUjGolOz.jpg",
+  mark: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663030736112/NIvPnqRdzdxoPpxy.png",
 };
 
 const categories = [
