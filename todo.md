@@ -8,3 +8,10 @@
 - [x] Connect homepage/footer navigation to the new routes.
 - [x] Verify responsive layouts, route accessibility, type-check and production build.
 - [x] Save and deliver the updated project checkpoint.
+
+## GitHub Repository Push
+
+- [x] Verify access to `roksana-commits/factora-journal` and inspect its default branch/history.
+- [ ] Confirm the local project git state and prepare a clean source commit.
+- [ ] Push the current website source without overwriting unrelated remote work.
+- [ ] Verify the remote branch and latest commit on GitHub.
